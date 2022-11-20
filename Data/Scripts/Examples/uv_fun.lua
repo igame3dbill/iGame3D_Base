@@ -1,4 +1,4 @@
-setSceneInfo(IG3D_ROOT, "/ig3d_mac_xcode/")
+--setSceneInfo(IG3D_ROOT, "/ig3d_mac_xcode/") -- commented out 11-20-2022
 a=make(ig3d_object, "square")
 setObjectInfo(a, IG3D_POSITION, 0,0,-40)
 setObjectInfo(a, IG3D_ROTATION, 90,0,0)

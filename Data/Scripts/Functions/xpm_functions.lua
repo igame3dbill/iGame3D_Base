@@ -6,7 +6,8 @@ XPMEndOfFile="};"
 
 aCol,aRow=1,1
 XPMreadText=""
-dofile("/ig3d_mac_xcode/Data/Scripts/Convert/AquariusCharactersPMB.lua")
+gameroot=getSceneInfo(IG3D_ROOT)
+dofile(gameroot.."/Data/Scripts/Convert/AquariusCharactersPMB.lua")
 -- These values are temporary from Aquarius ScreenShot
 XPMimageName="XPMFile.xpm"
 XPMImageWidth,XPMImageHeight,XPMNumberOfImageColors,XPMCharsPerPixel = 352,232,16,1

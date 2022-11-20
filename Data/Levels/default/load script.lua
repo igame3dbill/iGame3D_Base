@@ -1,4 +1,5 @@
 -- Begin of auto-script
+loadMesh("Data/Levels/default/default_level_mesh.wtf")
 gFontFiles={{"Data/FontPngs/default32_1.png","Data/FontPngs/default32_2.png"}}
 for i=1,#gFontFiles,1 do
 	loadFont(gFontFiles[i][1],gFontFiles[i][2])
@@ -56,13 +57,14 @@ setLightInfo(5, IG3D_ENABLED, false)
 setLightInfo(6, IG3D_ENABLED, false)
 setLightInfo(7, IG3D_ENABLED, false)
 setLightInfo(8, IG3D_ENABLED, false)
-LockScript = true
 -- End of auto-script
 if UIMainTools then UIMainTools:hide() end
 gameroot=getSceneInfo(IG3D_ROOT)
 
 --default global functions init
+if UIMainTools == null then 
 	dofile(gameroot.."Data/Scripts/Default/default_Globals.lua")
+  end
 		showDefaultTools() --   see Data/Scripts/Default/User_Interface/main_tool_functions.lua
 	ig3d_SetMode_i(1) -- 
 	--TextBox_Levels_Menu()  -- see Data/Scripts/Default//Entity/textBox_functions.lua

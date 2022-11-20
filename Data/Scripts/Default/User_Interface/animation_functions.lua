@@ -1,4 +1,6 @@
 --animation_functions.lua
+gameroot=getSceneInfo(IG3D_ROOT)
+
 function test_this()
 end
 
@@ -232,7 +234,8 @@ BVHtoWIF.export = the path that the .txt or (WIF) file
 use this function for automated conversion, beware, bugs stop the function
 nstrt is used to track the failed files and start at the next step
 ]]--
-dofile("/ig3d_mac_xcode/Data/Scripts/Examples/truebonesbvh_parser.lua")
+
+dofile(gameroot.."Data/Scripts/Examples/truebonesbvh_parser.lua")
 --dofile(gameroot.."Data/WIFtoBVHTables.lua")--for recreation only
 dofile(gameroot.."Data/BVHPathTables.lua")
 if nstrt == nil then nstrt = 1 end
