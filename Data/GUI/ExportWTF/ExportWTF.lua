@@ -1,9 +1,9 @@
 --function make_window()
 gFoldersFound={}
 WTFCategories={}
-gameroot="/ig3d_mac_xcode/"
+gameroot=lfs.currentdir() -- murgaLua + lua file system 
 Lastpathout=""
-WTFFolderPath=gameroot.."Data/WTF"
+WTFFolderPath=gameroot.."/Data/WTF"
 wtfsaveFile=""
 ChosenCategory=""
 function dirandsubdirs(tPath)
